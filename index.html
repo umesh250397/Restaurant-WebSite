@@ -6,15 +6,19 @@
     <meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Ristorante Con Fusion</title>
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="bootstrap-social.css">
     <link rel="stylesheet" type="text/css" href="Style.css">
+    <!-- endbuild -->
+    <!-- build:js js/main.js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/Scripts.js"></script>
+    <!-- endbuild -->
 </head>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
 
 <body>
     <nav class="navbar navbar-inverse navbar-expand-lg navbar-light fixed-top">
@@ -243,23 +247,6 @@
         </div>
     </footer>
 
-    <script type="text/javascript">
-        $('document').ready(function(){
-            $("#mycarousel").carousel({interval: 2000});
-            $("#carousel-button").click(function(){
-                if($("#carousel-button").children("span").hasClass("fa-pause")){
-                    $("#mycarousel").carousel('pause');
-                    $("#carousel-button").children("span").removeClass("fa-pause");
-                    $("#carousel-button").children("span").addClass("fa-play");
-                }
-                else if($("#carousel-button").children("span").hasClass("fa-play")){
-                    $("#mycarousel").carousel('cycle');
-                    $("#carousel-button").children("span").removeClass("fa-play");
-                    $("#carousel-button").children("span").addClass("fa-pause");
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
